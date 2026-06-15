@@ -1,0 +1,276 @@
+/* ============================================================
+   Felipe Sauma — portfólio
+   Estilo do site. Você raramente vai precisar mexer aqui.
+   ============================================================ */
+
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --gray-500: #6b7280;
+  --gray-100: #f3f4f6;
+  --gray-bg: #f3f4f6;
+  --header-h: 64px;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--black);
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+}
+
+a { color: inherit; text-decoration: none; }
+
+img { display: block; max-width: 100%; }
+
+/* ---- container ---- */
+.container {
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+@media (min-width: 640px)  { .container { max-width: 640px; } }
+@media (min-width: 768px)  { .container { max-width: 768px; } }
+@media (min-width: 1024px) { .container { max-width: 1024px; } }
+@media (min-width: 1280px) { .container { max-width: 1280px; } }
+
+/* ---- header ---- */
+.site-header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+.site-header .bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.brand {
+  font-size: 1.125rem;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  transition: opacity 0.2s;
+}
+.brand:hover { opacity: 0.7; }
+.brand strong { font-weight: 400; }
+.brand .muted { color: var(--gray-500); }
+
+.nav { display: flex; align-items: center; gap: 2rem; }
+.nav a {
+  font-size: 0.875rem;
+  transition: opacity 0.2s;
+}
+.nav a:hover { opacity: 0.7; }
+.nav a.active { font-weight: 500; }
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+.menu-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #000;
+  margin: 5px 0;
+  transition: all 0.3s;
+}
+
+@media (max-width: 767px) {
+  .menu-toggle { display: block; }
+  .nav {
+    position: absolute;
+    top: var(--header-h);
+    left: 0; right: 0;
+    flex-direction: column;
+    gap: 0;
+    background: rgba(255,255,255,0.98);
+    border-top: 1px solid var(--gray-100);
+    padding: 0.5rem 0;
+    display: none;
+  }
+  .nav.open { display: flex; }
+  .nav a { padding: 0.75rem 1rem; width: 100%; }
+}
+
+/* ---- main ---- */
+main { min-height: 100vh; padding-top: var(--header-h); }
+
+/* ---- home grid ---- */
+.grid-wrap { padding-inline: 0; }
+@media (min-width: 640px) { .grid-wrap { padding-inline: 1rem; } }
+
+.work-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.25rem;
+}
+@media (min-width: 640px)  { .work-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .work-grid { grid-template-columns: repeat(3, 1fr); } }
+
+.card {
+  position: relative;
+  display: block;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: var(--gray-bg);
+}
+.card img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.card:hover img { transform: scale(1.05); }
+.card .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0);
+  transition: background 0.3s;
+  display: flex;
+  align-items: flex-end;
+}
+.card:hover .overlay { background: rgba(0,0,0,0.30); }
+.card .label {
+  padding: 1rem;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform 0.3s;
+}
+.card:hover .label { transform: translateY(0); }
+.card .label h3 {
+  margin: 0;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: lowercase;
+}
+/* No touch (celular), mostra o título sempre para não depender do hover */
+@media (hover: none) {
+  .card .overlay { background: rgba(0,0,0,0.15); }
+  .card .label { transform: translateY(0); }
+}
+
+/* ---- páginas de conteúdo (sobre, contato, projeto) ---- */
+.page { padding-top: 3rem; padding-bottom: 3rem; }
+.page h1 {
+  font-size: 2.25rem;
+  font-weight: 300;
+  text-transform: lowercase;
+  margin: 0 0 1.5rem;
+}
+.page h2 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-transform: lowercase;
+  margin: 2.5rem 0 0.75rem;
+}
+.page h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: lowercase;
+  margin: 2rem 0 0.5rem;
+}
+.page p { margin: 0 0 1rem; max-width: 640px; }
+.muted { color: var(--gray-500); }
+
+.back-link {
+  display: inline-block;
+  font-size: 0.875rem;
+  color: var(--gray-500);
+  margin-bottom: 1.5rem;
+  transition: opacity 0.2s;
+}
+.back-link:hover { opacity: 0.6; }
+
+.meta-line { color: var(--gray-500); margin: 0.25rem 0; }
+
+/* vídeos 16:9 */
+.video-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin: 1rem 0;
+  background: #000;
+}
+.video-wrap iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* miniatura de vídeo do YouTube (abre em nova aba) */
+.yt-card { display: block; cursor: pointer; text-decoration: none; }
+.yt-card img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.yt-card .yt-play {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.18);
+  transition: background 0.25s;
+}
+.yt-card:hover .yt-play { background: rgba(0, 0, 0, 0.32); }
+.yt-card .yt-play svg { width: 72px; height: 51px; }
+.yt-card .yt-play .yt-bg { fill: #000; opacity: 0.75; transition: opacity 0.25s; }
+.yt-card:hover .yt-play .yt-bg { opacity: 0.9; }
+.yt-card .yt-play .yt-tri { fill: #fff; }
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  margin: 1rem 0;
+  background: var(--gray-bg);
+}
+
+.contact-list a { text-decoration: underline; text-underline-offset: 3px; }
+.contact-list a:hover { opacity: 0.6; }
+
+/* ---- footer ---- */
+.site-footer {
+  padding: 2rem 0;
+  margin-top: 4rem;
+  border-top: 1px solid var(--gray-100);
+  text-align: center;
+}
+.site-footer p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--gray-500);
+}
+
+/* acessibilidade: foco visível */
+a:focus-visible, button:focus-visible {
+  outline: 2px solid #000;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}
