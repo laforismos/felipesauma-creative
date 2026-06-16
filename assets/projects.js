@@ -35,12 +35,13 @@ const PROJECTS = [
   },
   {
     slug: "nestle-neos-grego",
-    title: "nestlé neosgrego",
+    title: "dpa lactalis",
     client: "Nestlé",
     category: "Advertising",
-    thumb: "assets/thumbs/nestle-neos-grego.jpg",
+    thumb: "assets/thumbs/chandelle-batalha-de-escolhas.jpg",
     videos: [
-      "https://player.vimeo.com/video/1155186372"
+      "https://player.vimeo.com/video/1155186372",
+      "https://player.vimeo.com/video/1034213758"
     ],
     images: [
       "https://firebasestorage.googleapis.com/v0/b/felipesaumastg/o/projects%2Fnestle-neos-grego%2Fthumbnail.png?alt=media&token=39067d0d-0af0-41d0-bd24-812136e4487f"
@@ -59,19 +60,6 @@ const PROJECTS = [
     images: [
       "https://firebasestorage.googleapis.com/v0/b/felipesaumastg/o/projects%2Fpilao%2Fgallery_0_1769698449464.jpg?alt=media&token=8d556723-4cfa-4b57-a24c-85d881b3bb26",
       "https://firebasestorage.googleapis.com/v0/b/felipesaumastg/o/projects%2Fpilao%2Fgallery_1_1769698451515.jpg?alt=media&token=9883685b-2450-42c3-a8ab-c48783f4d6f4"
-    ]
-  },
-  {
-    slug: "chandelle-batalha-de-escolhas",
-    title: "chandelle",
-    client: "Chandelle",
-    category: "Advertising",
-    thumb: "assets/thumbs/chandelle-batalha-de-escolhas.jpg",
-    videos: [
-      "https://player.vimeo.com/video/1034213758"
-    ],
-    images: [
-      "https://firebasestorage.googleapis.com/v0/b/felipesaumastg/o/projects%2Fchandelle-batalha-de-escolhas%2Fgallery_0_1769698456914.jpg?alt=media&token=33b793b9-77a8-4113-aaee-f74723695a5f"
     ]
   },
   {
@@ -172,11 +160,12 @@ const PROJECTS = [
   },
   {
     slug: "aussie-onlyfrangos",
-    title: "aussie grill",
+    title: "outros",
     client: "Aussie",
     category: "Advertising",
     thumb: "assets/thumbs/aussie-onlyfrangos.jpg",
     videos: [
+      "https://player.vimeo.com/video/1014836478",
       "https://player.vimeo.com/video/1014836415"
     ],
     images: [
