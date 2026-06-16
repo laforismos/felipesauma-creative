@@ -22,8 +22,20 @@
 
 const PROJECTS = [
   {
+    slug: "lor-rota-dos-sentidos",
+    title: "l'or",
+    client: "L'OR",
+    category: "Advertising",
+    thumb: "assets/thumbs/lor-rota-dos-sentidos.jpg",
+    videos: [
+      "https://player.vimeo.com/video/1201629750",
+      "https://player.vimeo.com/video/1201630247"
+    ],
+    images: []
+  },
+  {
     slug: "nestle-neos-grego",
-    title: "Nestlé Neos Grego",
+    title: "nestlé neosgrego",
     client: "Nestlé",
     category: "Advertising",
     thumb: "assets/thumbs/nestle-neos-grego.jpg",
@@ -36,7 +48,7 @@ const PROJECTS = [
   },
   {
     slug: "pilao",
-    title: "Pilão",
+    title: "pilão",
     client: "Pilão",
     category: "Advertising",
     thumb: "assets/thumbs/pilao.jpg",
@@ -51,7 +63,7 @@ const PROJECTS = [
   },
   {
     slug: "chandelle-batalha-de-escolhas",
-    title: "Chandelle - Batalha de Escolhas",
+    title: "chandelle",
     client: "Chandelle",
     category: "Advertising",
     thumb: "assets/thumbs/chandelle-batalha-de-escolhas.jpg",
@@ -64,7 +76,7 @@ const PROJECTS = [
   },
   {
     slug: "heinz-marz-edition",
-    title: "Heinz Marz Edition",
+    title: "heinz",
     client: "Heinz",
     category: "Advertising",
     thumb: "assets/thumbs/heinz-marz-edition.jpg",
@@ -86,7 +98,7 @@ const PROJECTS = [
   },
   {
     slug: "piraque",
-    title: "Piraquê",
+    title: "piraquê",
     client: "Piraquê",
     category: "Advertising",
     thumb: "assets/thumbs/piraque.jpg",
@@ -101,7 +113,7 @@ const PROJECTS = [
   },
   {
     slug: "brahma-jaguariuna",
-    title: "Brahma Jaguariúna",
+    title: "brahma",
     client: "Brahma",
     category: "Advertising",
     thumb: "assets/thumbs/brahma-jaguariuna.jpg",
@@ -114,7 +126,7 @@ const PROJECTS = [
   },
   {
     slug: "sempre-livre",
-    title: "Sempre Livre",
+    title: "semprelivre",
     client: "Sempre Livre",
     category: "Advertising",
     thumb: "assets/thumbs/sempre-livre.jpg",
@@ -128,7 +140,7 @@ const PROJECTS = [
   },
   {
     slug: "carefree",
-    title: "Carefree",
+    title: "carefree",
     client: "Carefree",
     category: "Advertising",
     thumb: "assets/thumbs/carefree.jpg",
@@ -159,7 +171,7 @@ const PROJECTS = [
   },
   {
     slug: "ambev-zerois-do-role",
-    title: "Ambev Zeróis do Rolê",
+    title: "zé delivery",
     client: "Ambev",
     category: "Advertising",
     thumb: "assets/thumbs/ambev-zerois-do-role.jpg",
@@ -171,47 +183,8 @@ const PROJECTS = [
     ]
   },
   {
-    slug: "natura",
-    title: "Natura",
-    client: "Natura",
-    category: "Advertising",
-    thumb: "assets/thumbs/natura.jpg",
-    videos: [
-      "https://player.vimeo.com/video/566730280"
-    ],
-    images: [
-      "https://firebasestorage.googleapis.com/v0/b/felipesaumastg/o/projects%2Fnatura%2Fgallery_0_1769698496652.jpg?alt=media&token=5065a6e8-4575-4e29-bc36-722ea5dfdc71"
-    ]
-  },
-  {
-    slug: "olx-recomecos",
-    title: "OLX Recomeços",
-    client: "OLX",
-    category: "Advertising",
-    thumb: "assets/thumbs/olx-recomecos.jpg",
-    videos: [
-      "https://player.vimeo.com/video/716014379"
-    ],
-    images: [
-      "https://firebasestorage.googleapis.com/v0/b/felipesaumastg/o/projects%2Folx-recomecos%2Fgallery_0_1769698498913.jpg?alt=media&token=63958c8b-effa-4954-b3a8-2c4f5816fb8e"
-    ]
-  },
-  {
-    slug: "seara-gourmet",
-    title: "Seara Gourmet",
-    client: "Seara",
-    category: "Advertising",
-    thumb: "assets/thumbs/seara-gourmet.jpg",
-    videos: [
-      "https://player.vimeo.com/video/507107231"
-    ],
-    images: [
-      "https://firebasestorage.googleapis.com/v0/b/felipesaumastg/o/projects%2Fseara-gourmet%2Fgallery_0_1769698501186.jpg?alt=media&token=3b11f62f-7869-4a37-8a94-36515fb0318b"
-    ]
-  },
-  {
     slug: "aussie-onlyfrangos",
-    title: "Aussie OnlyFrangos",
+    title: "aussie grill",
     client: "Aussie",
     category: "Advertising",
     thumb: "assets/thumbs/aussie-onlyfrangos.jpg",
