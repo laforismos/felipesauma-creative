@@ -113,12 +113,13 @@ const PROJECTS = [
   },
   {
     slug: "brahma-jaguariuna",
-    title: "brahma",
+    title: "ambev",
     client: "Brahma",
     category: "Advertising",
     thumb: "assets/thumbs/brahma-jaguariuna.jpg",
     videos: [
-      "https://player.vimeo.com/video/983151641"
+      "https://player.vimeo.com/video/983151641",
+      "https://player.vimeo.com/video/826224777"
     ],
     images: [
       "https://firebasestorage.googleapis.com/v0/b/felipesaumastg/o/projects%2Fbrahma-jaguariuna%2Fgallery_0_1769698474847.jpg?alt=media&token=7b787acf-9a51-43ed-acf5-5007931e3f89"
@@ -167,19 +168,6 @@ const PROJECTS = [
       "https://firebasestorage.googleapis.com/v0/b/felipesaumastg/o/projects%2Fcarefree%2Fgallery_5_1769698487333.jpg?alt=media&token=34572485-b872-4f7f-9878-c3a46af1de52",
       "https://firebasestorage.googleapis.com/v0/b/felipesaumastg/o/projects%2Fcarefree%2Fgallery_6_1769698489110.jpg?alt=media&token=fdfb9b60-521e-40f4-adf4-7717333b37c5",
       "https://firebasestorage.googleapis.com/v0/b/felipesaumastg/o/projects%2Fcarefree%2Fgallery_7_1769698490954.jpg?alt=media&token=7481659e-a679-4fec-9bc4-8bd1e2e99915"
-    ]
-  },
-  {
-    slug: "ambev-zerois-do-role",
-    title: "zé delivery",
-    client: "Ambev",
-    category: "Advertising",
-    thumb: "assets/thumbs/ambev-zerois-do-role.jpg",
-    videos: [
-      "https://player.vimeo.com/video/826224777"
-    ],
-    images: [
-      "https://firebasestorage.googleapis.com/v0/b/felipesaumastg/o/projects%2Fambev-zerois-do-role%2Fgallery_0_1769698494320.jpg?alt=media&token=a0855f8c-b8e7-4f94-94f7-416099d64563"
     ]
   },
   {
