@@ -29,7 +29,8 @@ const PROJECTS = [
     thumb: "assets/thumbs/lor-rota-dos-sentidos.jpg",
     videos: [
       "https://player.vimeo.com/video/1201629750",
-      "https://player.vimeo.com/video/1201630247"
+      "https://player.vimeo.com/video/1201630247",
+      "https://www.youtube-nocookie.com/embed/G7eXhNuhHjs"
     ],
     images: []
   },
